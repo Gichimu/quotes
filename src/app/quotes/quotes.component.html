@@ -1,38 +1,23 @@
 <div class="container content">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center item">
         <p class="welcome-text">Welcome to <strong>Quotes.com</strong> where we bring you the most relevant and inspirational quotes to suit your situation.</p>
     </div>
-    <div class="input-group mb-2 mr-sm-2">
+    <!-- <div class="input-group mb-2 mr-sm-2 item">
         <div class="input-group-prepend">
             <div class="input-group-text">@</div>
         </div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Search a quote...">
-    </div>
-    <ul class="list-group" *ngFor='let quote of quotes; let i = index'>
-        
-            
-            
-            <div class="row">
-                <div class="col">
-                    <li class="list-group-item text-center" (click)='toggleDetails(i)'>{{ quote.quote }} ~{{quote.author}}</li>
-                </div>
-                <div class="col">
-                    <div class="dropup">
-                        <button class="btn btn-success dropdown-toggle">  Upvote</button>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="btn btn-warning dropdown-toggle">Downvote</button>
-                    </div>
-                </div>
+        <input type="text" class="form-control" width="100%" id="inlineFormInputGroupUsername2" placeholder="Search a quote...">
+    </div> -->
+    <ul class="list-group card item" *ngFor='let quote of quotes; let i = index'>  
+        <div class="row">
+            <div class="col">
+                <li class="list-group-item text-center quote-text" (click)='toggleDetails(i)'>{{ quote.quote }} ~{{quote.author}}</li>
             </div>
             
-            
-        
-        <div *ngIf='quote.showDetails' class="text-center">
-            <app-quotes-details [details]='quote'></app-quotes-details>
         </div>
+        <div *ngIf='quote.showDetails' class=" text-center">
+            <app-quotes-details [details]='quote' (isDone)='deleteQuote(i)'></app-quotes-details>
         
+        </div>
     </ul>
 </div>

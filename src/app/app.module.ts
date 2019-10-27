@@ -8,6 +8,7 @@ import { QuotesDetailsComponent } from './quotes-details/quotes-details.componen
 import { AddQuoteComponent } from './add-quote/add-quote.component';
 import { NavComponent } from './nav/nav.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     QuotesComponent,
     QuotesDetailsComponent,
     AddQuoteComponent,
-    NavComponent
+    NavComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
