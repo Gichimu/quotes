@@ -4,6 +4,17 @@ nav a {
     
 }
 
+nav a:hover {
+    background-color: grey;
+    color: white;
+}
+
 nav {
-    background-color: #9933FF;
+    background-color: rgb(149, 51, 247);
+    font-family: 'Righteous', serif;
+}
+
+.logo {
+    font-family: 'Modak', serif;
+    font-size: 1.5em;
 }
