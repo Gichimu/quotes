@@ -1,27 +1,43 @@
-# Quotes
+## Project Name
+ Quotes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+## Brief description of website.
+The Project entails a website for generating and viewing as well as rating quotes.
 
-## Development server
+## Main contributors
+- [Eric Gichimu] [github:Gichimu]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About authors
+The author is a core student at moringa school studying software development.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## BDD
+(Behavior Driven Development)
+The website is very easy to use. On the landing page there are several links to navigate through.
+* On the landing page, there are several quotes that a visitor can view and rate as well as delete.
+* The visitor can then write a quote of their own and this will appear on the left hand side under the other quotes.
+* The user can press a quote and this will reveal the details section where he/she can view the time
+passed since their quote was added and rate the quote either upwards or downwards using the respective 
+buttons.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ 
+## Languages
+The website is written in english.
+## Setup/Installation Requirements
+No setups and installations.
+## Technologies Used
+* HTML
+* C.S.S
+* Javascript
+* Angular 8
+* Bootstrap 4.3.0
 
-## Running unit tests
+## Support and contact details
+ Incase of any bugs encountered contact [gichimueric12@gmail.com]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ ## link to live site
+ 
+ ## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
