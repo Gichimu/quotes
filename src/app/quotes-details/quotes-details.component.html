@@ -1,7 +1,7 @@
 <div class="container text-center body">
     <hr>
     <div>
-        <p>added by - {{details.added_by}}</p>
+        <p>added by - {{details.added_by}} {{details.datestamp | mydate}} days ago</p>
     </div>
     <div>
         <small>This quote has <strong>{{details.upvotes}}</strong> upvotes and <strong>{{details.downvotes}}</strong> downvotes.</small>
