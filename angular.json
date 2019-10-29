@@ -121,8 +121,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/Quotes",
+            "netlifyToken": "ffcbd826d4b079cc3c75cad879d1af200ce03dcf7ff2df0ef8841b6611191a60",
+            "siteId": "5f2187b5-17a6-4fd5-b0d6-2e5a563665aa"
+          }
         }
       }
     }
