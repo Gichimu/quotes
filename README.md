@@ -37,7 +37,7 @@ No setups and installations.
  Incase of any bugs encountered contact [gichimueric12@gmail.com]
 
  ## link to live site
- [https://github.com/Gichimu/quotes]
+ [https://github.com/Gichimu/]
  
  ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
