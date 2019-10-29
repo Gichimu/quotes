@@ -1,23 +1,31 @@
-<div class="container content">
-    <div class="jumbotron text-center item">
+<div class="container">
+    <div class="jumbotron text-center">
         <p class="welcome-text">Welcome to <strong>Quotes.com</strong> where we bring you the most relevant and inspirational quotes to suit your situation.</p>
     </div>
-    <!-- <div class="input-group mb-2 mr-sm-2 item">
-        <div class="input-group-prepend">
-            <div class="input-group-text">@</div>
+    
+    <div class="row">
+        <div class="col-md-6"> 
+            <ul class="list-group card item" *ngFor='let quote of quotes; let i = index'>  
+                <div class="row">
+                    <div class="col">
+                        <ng-template [ngIf]="quote.upvotes" [ngIfElse]='none'>
+                            <li class="list-group-item text-center quote-text" (click)='toggleDetails(i)' appHighlight>{{ quote.quote }} ~{{quote.author}}</li>
+                        </ng-template>
+                        
+                        <ng-template #none>
+                            <li class="list-group-item text-center quote-text" (click)='toggleDetails(i)'>{{ quote.quote }} ~{{quote.author}}</li>
+                        </ng-template>
+                    </div>
+                    
+                </div>
+                <div *ngIf='quote.showDetails' class=" text-center">
+                    <app-quotes-details [details]='quote' (isDone)='deleteQuote(i)'></app-quotes-details>
+                
+                </div>
+            </ul>
         </div>
-        <input type="text" class="form-control" width="100%" id="inlineFormInputGroupUsername2" placeholder="Search a quote...">
-    </div> -->
-    <ul class="list-group card item" *ngFor='let quote of quotes; let i = index'>  
-        <div class="row">
-            <div class="col">
-                <li class="list-group-item text-center quote-text" (click)='toggleDetails(i)'>{{ quote.quote }} ~{{quote.author}}</li>
-            </div>
-            
+        <div class="col-md-6">
+            <app-add-quote (em)='addQuote($event)'></app-add-quote>
         </div>
-        <div *ngIf='quote.showDetails' class=" text-center">
-            <app-quotes-details [details]='quote' (isDone)='deleteQuote(i)'></app-quotes-details>
-        
-        </div>
-    </ul>
+    </div>
 </div>
