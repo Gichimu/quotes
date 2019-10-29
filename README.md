@@ -5,7 +5,7 @@
 The Project entails a website for generating and viewing as well as rating quotes.
 
 ## Main contributors
-- [Eric Gichimu] [github:Gichimu]
+- [Eric Gichimu] [https://github.com/Gichimu]
 
 
 ## About authors
