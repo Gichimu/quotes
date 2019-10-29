@@ -19,8 +19,8 @@ export class QuotesDetailsComponent implements OnInit {
     this.details.downvotes+=1;
   }
 
-  delete(complete:boolean){
-    this.isDone.emit(complete);
+  delete(){
+    this.isDone.emit();
   }
   constructor() { }
 
